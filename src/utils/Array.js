@@ -1,0 +1,1 @@
+export const aprovados = ['Victor Bahia', 'Ronaldo Simões', 'Julia Matias', 'Mariana Ximenes']

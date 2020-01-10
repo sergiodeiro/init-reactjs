@@ -1,12 +1,27 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
+import ReactDom from 'react-dom'
+import Multi from './components/MultiplosComponentes'
+import Family from './components/group/Family'
+import Member from './components/group/Member'
+import CompFunction from './components/CompFunction'
+import Father from './components/group/Father'
+import CompClass from './components/classes/CompClass';
+import Cont from './components/classes/Cont';
+import Hooks from './components/hook/Hooks';
 
-ReactDOM.render(<App />, document.getElementById('root'));
+var root = document.getElementById('root');
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();
+ReactDom.render(
+    <div>
+        <Hooks />
+        <Cont numero={0}/>
+        <CompClass valor="89"/>
+        <Father />
+        <CompFunction />
+        <Family sobrenome="Deiró">
+            <Member name="Sergio"/>
+            <Member name="Matias"/>
+        </Family>
+        <Multi />
+    </div>
+,root);
